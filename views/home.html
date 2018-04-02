@@ -1,0 +1,23 @@
+
+        <div class="row justify-content-end align-items-end" id="about">
+            <div class="col-lg-3 col-sm-12">
+                <img src="img/home.jpg" class="me" alt="Mahmoud Youssef" />
+            </div>
+            <div class="col-lg-8 col-sm-12">
+                <h3>Mahmoud Youssef</h3>
+                <p>A student in the faculty of engineering at Ain-Shams university who is interested in front-end and back-end web development and has plenty of knowledge in both of those fields that allow him to make awesome web apps and web sites.<br> <q style="font-size: 1.5rem;">learning is endless, that's what makes it interesting.</q></p>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card" ng-repeat="card in cards" ng-show="{{ card.shown }}">
+                <img ng-src="{{ card.img }}" alt="card.title" class="card-img-top">
+                <hr>
+                <div class="card-body">
+                    <h5 class="card-title">{{ card.title }}</h5>
+                    <p class="card-text">{{ card.text }}</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Order now.</small>
+                </div>
+            </div>
+        </div>
