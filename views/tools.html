@@ -1,10 +1,12 @@
-<div class="card-columns">
-    <div ng-repeat="tool in tools" class="{{ tool.class }}">
-        <img ng-src="{{ tool.img }}" alt="{{ tool.alt }}" class="card-img-top">
-        <hr>
-        <div class="card-body">
-            <h4 class="card-title">{{ tool.title }}</h4>
-            <p class="card-text">{{ tool.text }}</p>
+<div class="container">
+    <div class="card-columns">
+        <div ng-repeat="tool in tools" class="{{ tool.class }}">
+            <img ng-src="{{ tool.img }}" alt="{{ tool.alt }}" class="card-img-top">
+            <hr>
+            <div class="card-body">
+                <h4 class="card-title">{{ tool.title }}</h4>
+                <p class="card-text">{{ tool.text }}</p>
+            </div>
         </div>
     </div>
 </div>

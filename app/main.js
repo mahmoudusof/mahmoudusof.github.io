@@ -1,6 +1,9 @@
 var portfolio = angular.module("portfolio", ['ngAnimate', 'ngRoute']);
 
-portfolio.config(['$routeProvider', function($routeProvider){
+portfolio.config(['$routeProvider', "$locationProvider", function($routeProvider, $locationProvider){
+
+    $locationProvider.html5Mode(true);
+
     $routeProvider
     .when('/home', {
         templateUrl: "views/home.html",
@@ -31,7 +34,4 @@ portfolio.controller("ToolsController", ["$scope", "$http", function($scope, $ht
     });
     
 }]);
-
-
-
 
