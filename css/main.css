@@ -62,13 +62,27 @@ footer  ul{
     transition: 0.5s ease-in-out all;
 }
 main.ng-enter{
-    transform: translateX(300px);
-    opacity: 0;
-    transition: 0.5s ease-in-out all;
+    transform-origin: top;
+    animation: slide 1s ease-in-out 0s 1;
 }
-main.ng-enter.ng-enter-active{
+/* main.ng-enter.ng-enter-active{
     transform: translateX(0);
     opacity: 1;
+} */
+
+
+@keyframes slide{
+    0%{
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+    70%{
+        opacity: 1;
+        transform: rotateX(30deg);
+    }
+    100%{
+        transform: rotateX(0);
+    }
 }
 
 
