@@ -36,12 +36,19 @@ portfolio.controller("ToolsController", ["$scope", "$http", function($scope, $ht
 }]);
 
 
+// document.addEventListener("scroll", function(){
+
+// });
+
 document.addEventListener("scroll", function(){
-    var content = document.getElementById("content");
+    var back = document.getElementById("back");
     var win_y = window.scrollY;
     var win_h = window.innerHeight;
-    content.style.top = String((win_y/4) + ((win_h / 2) - 100)) + "px";
+    var content = document.getElementById("content");
+    var cont_h = content.style.height;
+
+    back.style.backgroundPositionY = String(win_y/4) + "px";
+
+    content.style.top = String((win_y/2.5) + ((win_h / 2) - 100)) + "px";
 });
-
-
 
