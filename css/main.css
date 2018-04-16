@@ -73,14 +73,18 @@ main.ng-enter{
 .main-jumb{
     background-image: url('/img/unsplash.jpg');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
     color: white;
 }
 .sub-jumb{
     height: 100vh;
-    position: relative;
-    top: calc(50vh - 50px);
     background-color: rgba(0, 0, 0, 0.5);
+}
+#content{
+    position: relative;
+    top: calc(50vh - 100px);
 }
 
 

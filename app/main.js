@@ -35,3 +35,13 @@ portfolio.controller("ToolsController", ["$scope", "$http", function($scope, $ht
     
 }]);
 
+
+document.addEventListener("scroll", function(){
+    var content = document.getElementById("content");
+    var win_y = window.scrollY;
+    var win_h = window.innerHeight;
+    content.style.top = String((win_y/4) + ((win_h / 2) - 100)) + "px";
+});
+
+
+
