@@ -1,20 +1,24 @@
 .navbar-brand{
     font-size: 25px;
     margin-left: 20px;
+    font-family: "Raleway";
+    font-style: italic;
 }
 .navbar{
     padding: 0;
     padding-right: 10px;
-    background-color: rgba(0, 0, 0, 0.2);
 }
 .nav-link{
     padding: 15px !important;
     transition: 0.2s all ease-in-out;
     font-size: 1.1rem;
+    font-family: "Raleway";
+    font-weight: bold;
 }
 .nav-link.active{
     background-color: #007bff;
     text-shadow: black 1px 1px 3px;
+    font-style: italic;
 }
 .nav-link:hover{
     background-color: #007bff98;
@@ -76,7 +80,7 @@ footer  ul{
 }
 main.ng-enter{
     transform-origin: top;
-    animation: slide 1s ease-in-out 0s 1;
+    animation: load 0.5s ease-in-out 0s 1;
 }
 
 /* main.ng-enter.ng-enter-active{
@@ -107,6 +111,10 @@ main.ng-enter{
     border-radius: 50%;
     background-color: #007bff;
     animation: loading 1s ease-in-out 0s infinite;
+}
+#content>h1{
+    font-family: "Raleway";
+    font-weight: bold;
 }
 
 @keyframes slide{
