@@ -7,6 +7,13 @@
         "text":"We use the latest HTML5 elements and attributes and CSS3 properties to make your website look as awesome as you are and let it shake its booty."
     },
     {
+        "class":"card border-info mb-3",
+        "img":"img/django-logo-positive.png",
+        "alt":"Django",
+        "title":"Python Django",
+        "text":"Django is a frame work made for python to make dynamic web apps...  now you car make your e-commerce website with us or you can even make your own social network for your university campus, or maybe make a blog where friends can like your posts and make comments...  take your imagination to the next level."
+    },
+    {
         "class":"card border-danger mb-3",
         "img":"img/angular.png",
         "alt":"Angular.js",
@@ -21,17 +28,17 @@
         "text":"Bootstrap is an awesome css framework that we use to take the beauty of your page to the next level and make your website look awsome on any device."
     },
     {
-        "class":"card border-info mb-3",
-        "img":"img/django-logo-positive.png",
-        "alt":"Django",
-        "title":"Python Django",
-        "text":"Django is a frame work made for python to make dynamic web apps...  now you car make your e-commerce website with us or you can even make your own social network for your university campus, or maybe make a blog where friends can like your posts and make comments...  take your imagination to the next level."
-    },
-    {
         "class":"card border-warning mb-3",
         "img":"img/laravel-framework-logo.png",
         "alt":"Laravel",
         "title":"PHP Laravel",
         "text":"Laravel is an MVC based framework for PHP web applications. Now you can make super quick dynamic applications without having to worry about speed nor security."
+    },
+    {
+        "class":"card border-dark mb-3",
+        "img":"img/flask.png",
+        "alt":"Python Flask",
+        "title":"Flask",
+        "text":"Build complex e-commerce apps with python flask and get super flixable and super dynamic."
     }
 ]

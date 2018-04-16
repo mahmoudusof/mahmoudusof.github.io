@@ -70,6 +70,19 @@ main.ng-enter{
     opacity: 1;
 } */
 
+.main-jumb{
+    background-image: url('/img/unsplash.jpg');
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.sub-jumb{
+    height: 100vh;
+    position: relative;
+    top: calc(50vh - 50px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 
 @keyframes slide{
     0%{
