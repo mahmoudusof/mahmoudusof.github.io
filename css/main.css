@@ -5,10 +5,23 @@
 .navbar{
     padding: 0;
     padding-right: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 .nav-link{
     padding: 15px !important;
     transition: 0.2s all ease-in-out;
+    font-size: 1.1rem;
+}
+.nav-link.active{
+    background-color: #12a844;
+    text-shadow: black 1px 1px 3px;
+}
+.nav-link:hover{
+    background-color: #12a84488;
+}
+.nav-link.active:hover{
+    background-color: #12a844;
+    text-shadow: black 1px 1px 3px;
 }
 .custom-slide{
     filter: brightness(0.5);
@@ -65,6 +78,7 @@ main.ng-enter{
     transform-origin: top;
     animation: slide 1s ease-in-out 0s 1;
 }
+
 /* main.ng-enter.ng-enter-active{
     transform: translateX(0);
     opacity: 1;
@@ -85,6 +99,7 @@ main.ng-enter{
 #content{
     position: relative;
     top: calc(50vh - 100px);
+    animation: load 1s ease-in-out 0s 1;
 }
 
 
@@ -107,5 +122,17 @@ main.ng-enter{
     .container{
         margin: 10px 0 !important;
         max-width: 700px !important;
+    }
+}
+
+
+@keyframes load{
+    0%{
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
     }
 }
