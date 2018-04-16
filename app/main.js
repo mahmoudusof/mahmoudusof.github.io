@@ -70,5 +70,5 @@ function dis(clicked){
     }
 
     clicked.className = "nav-link active";
-    console.log("dis");
+    window.scrollTo(0, window.innerHeight-100);
 }
