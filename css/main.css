@@ -13,14 +13,14 @@
     font-size: 1.1rem;
 }
 .nav-link.active{
-    background-color: #12a844;
+    background-color: #007bff;
     text-shadow: black 1px 1px 3px;
 }
 .nav-link:hover{
-    background-color: #12a84488;
+    background-color: #007bff98;
 }
 .nav-link.active:hover{
-    background-color: #12a844;
+    background-color: #007bff;
     text-shadow: black 1px 1px 3px;
 }
 .custom-slide{
@@ -105,7 +105,7 @@ main.ng-enter{
     height: 50vw;
     width: 50vw;
     border-radius: 50%;
-    background-color: green;
+    background-color: #007bff;
     animation: loading 1s ease-in-out 0s infinite;
 }
 
