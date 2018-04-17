@@ -36,13 +36,14 @@ portfolio.controller("ToolsController", ["$scope", "$http", function($scope, $ht
 }]);
 
 
-
+// done
 $(document).ready(function(){
     var content = $("#content");
     content.show();
-    
 });
 
+////////////////////////////////
+// done
 function dis(clicked){
     var items = document.getElementsByClassName("nav-link");
     
@@ -53,7 +54,7 @@ function dis(clicked){
     clicked.className = "nav-link active";
     window.scrollTo(0, window.innerHeight-100);
 }
-
+///////////////////////////////
 
 function come(to, element, side){
     if (window.scrollY > window.innerHeight*to){
@@ -65,16 +66,21 @@ function come(to, element, side){
     }
 }
 
+
 document.addEventListener("scroll", function(){
-    var about = document.getElementById("about-content");
-    var home = document.getElementsByClassName("cardo");
-    var bio = document.getElementById("bio");
+    try {
+        var about = document.getElementById("about-content");
+        var home = document.getElementsByClassName("cardo");
+        var bio = document.getElementById("bio");
 
-    come(0.6, about, 1);
-    come(1.8, bio, 1);
+        come(0.6, about, 1);
+        come(1.8, bio, 1);
 
-    for (var i=0; i<home.length; i++){
-        come(1.2, home[i], -1);
+        for (var i=0; i<home.length; i++){
+            come(1.2, home[i], -1);
+        }
+    } catch (e) {
+        //
     }
 
     var back = document.getElementById("back");
