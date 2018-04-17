@@ -1,17 +1,23 @@
 [
     {
-        "img":"img/responsive2.jpg",
+        "img":"img/responsive4.png",
         "title":"Responsive",
-        "text":"We make our apps look awesome on all devices like PCs, laptops, tablets and mobile phones. The website will look different but will always stay AWESOME."
+        "text":"We make our apps look awesome on all devices like PCs, laptops, tablets and mobile phones. The website will look different but will always stay AWESOME.",
+        "left": 1,
+        "id": "first"
     },
     {
-        "img":"img/dynamic2.png",
+        "img":"img/dynamic3.png",
         "title":"Dynamic",
+        "left": 0,
+        "id": "second",
         "text":"Build your forum/blog now or even make a small facebook for your university campus. Make a registration system and a login system and allow your users to make posts on your app."
     },
     {
-        "img":"img/interactive2.png",
+        "img":"img/interactive3.png",
         "title":"Interactive",
+        "left": 1,
+        "id": "third",
         "text":"Your website should not be clicked and scrolled through and sit there with no replys. We offer you interactive pages that jump arround with your users activities and give them a pleasing experience."
     }
 ]

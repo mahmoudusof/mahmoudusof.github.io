@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+    background-color: #ddd;
+}
 .navbar-brand{
     font-size: 25px;
     margin-left: 20px;
@@ -31,23 +35,57 @@
     filter: brightness(0.5);
 }
 .container-fluid{
-    background-color: #ddd;
-    padding: 20px !important;
-}
-.container{
     padding: 20px;
     border-radius: 5px;
     background-color: white;
+    width: 100%;
+    margin-right: 30px;
 }
-.me{
+/* this area needs refactoring */
+.contains{
+    padding: 5vw;
+}
+#first{
+    transition: 0.3s ease-in-out all;
+    transition-delay: 0.2s;
+}
+#second{
+    transition: 0.3s ease-in-out all;
+    transition-delay: 0.1s;
+}
+#third{
+    transition: 0.3s ease-in-out all;
+    transition-delay: 0.0s;
+}
+.round-imgs{
     border-radius: 50%;
-    width: 250px;
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
     margin: 0 auto;
 }
-#about{
+.small-img{
+    height: 200px;
+    width: 200px !important;
+}
+#me{
+    max-width: 250px;
+}
+.round-imgs{
+    border-radius: 50%;
+    width: 100%;
+    max-width: 350px;
+}
+.custom-card{
+    height: 100%;
+    border: 1px solid #666;
+    padding: 0;
+}
+#bio{
     margin-bottom: 60px;
-    padding: 60px 0;
+    padding: 60px 0px;
     text-align: center;
+    transition: ease-in-out 0.5s all;
 }
 footer{
     background-color: #222;
@@ -62,8 +100,37 @@ footer  ul{
     font-weight: bold;
     margin: 30px auto 0 30px;
 }
-
-
+.about-container{
+    text-align: center;
+    padding: 0;
+    background-image: url("/img/responsive2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.about{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5% 10%;
+}
+.about p{
+    font-size: 1.2rem;
+}
+#about-content{
+    opacity: 0;
+    transform: translateX(10%);
+    transition: all 0.5s ease-in-out;
+}
+#home-cards{
+    opacity: 0;
+    transform: translateX(10%);
+    transition: all 0.5s ease-in-out;
+}
+q{
+    font-family: "Raleway";
+    font-weight: bold;
+}
 /* Animation */
 /* .animate-in{
     transform: translateX(0px);
@@ -133,7 +200,7 @@ main.ng-enter{
 
 
 @media (max-width: 770px){
-    .container{
+    .container-fluid{
         margin: 10px 0 !important;
         max-width: 700px !important;
     }

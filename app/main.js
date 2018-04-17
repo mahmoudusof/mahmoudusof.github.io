@@ -36,25 +36,6 @@ portfolio.controller("ToolsController", ["$scope", "$http", function($scope, $ht
 }]);
 
 
-document.addEventListener("scroll", function(){
-    var back = document.getElementById("back");
-    var win_y = window.scrollY;
-    var win_h = window.innerHeight;
-    var content = document.getElementById("content");
-
-    back.style.backgroundPositionY = String(win_y/5) + "px";
-
-    content.style.top = String((win_y/3) + ((win_h / 2) - 100)) + "px";
-});
-document.addEventListener("load", function(){
-
-});
-
-// document.addEventListener("load", function(){
-//     var content = document.getElementById("content");
-//     content.style.display = "block";
-//     console.log("loaded");
-// });
 
 $(document).ready(function(){
     var content = $("#content");
@@ -72,3 +53,41 @@ function dis(clicked){
     clicked.className = "nav-link active";
     window.scrollTo(0, window.innerHeight-100);
 }
+
+
+function come(to, element, side){
+    if (window.scrollY > window.innerHeight*to){
+        element.style.opacity = 1;
+        element.style.transform = "translateX(0px)";
+    }else{
+        element.style.opacity = 0;
+        element.style.transform = "translateX(" + String(side*10) + "%)";
+    }
+}
+
+document.addEventListener("scroll", function(){
+    var about = document.getElementById("about-content");
+    var home = document.getElementsByClassName("cardo");
+    var bio = document.getElementById("bio");
+
+    come(0.6, about, 1);
+    come(1.8, bio, 1);
+
+    for (var i=0; i<home.length; i++){
+        come(1.2, home[i], -1);
+    }
+
+    var back = document.getElementById("back");
+    var win_y = window.scrollY;
+    var win_h = window.innerHeight;
+    var content = document.getElementById("content");
+
+    back.style.backgroundPositionY = String(win_y/5) + "px";
+
+    content.style.top = String((win_y/3) + ((win_h / 2) - 100)) + "px";
+});
+
+// 0.5(img_width - innerWidth)
+
+// img_width = innerHeight * 1.8
+

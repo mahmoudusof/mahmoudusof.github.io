@@ -1,24 +1,24 @@
-<div class="container mt-0">
-        <div class="row justify-content-end align-items-end" id="about">
-            <div class="col-lg-3 col-sm-12">
-                <img src="img/home.jpg" class="me" alt="Mahmoud Youssef" />
-            </div>
-            <div class="col-lg-8 col-sm-12">
-                <h3>Mahmoud Youssef</h3>
-                <p>A student in the faculty of engineering at Ain-Shams university who is interested in front-end and back-end web development and has plenty of knowledge in both of those fields that allow him to make awesome web apps and web sites.<br> <q style="font-size: 1.5rem;">learning is endless, that's what makes it interesting.</q></p>
-            </div>
+
+    <div class="about-container">
+        <div class="about" id="about-content">
+            <h1>HEX Technology</h1>
+            <p>Have you ever wanted to make your personal static website? <br> You have a smart business idea and you want to add customer support on the web? <br> Want to make your own custom blog or forum? <br> We can do all of that for you.</p>
+            <q style="font-size: 1.5rem;">Make your static or dynamic web site with HEX Technology</q>
         </div>
-        <div class="card-deck">
-            <div class="card" ng-repeat="card in cards">
-                <img ng-src="{{ card.img }}" alt="card.title" class="card-img-top">
-                <hr>
-                <div class="card-body">
-                    <h5 class="card-title">{{ card.title }}</h5>
-                    <p class="card-text">{{ card.text }}</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Order now.</small>
-                </div>
-            </div>
+    </div>
+    <div class="row my-5">
+        <div class="col-lg-4 cardo" id="{{ card.id }}" style="text-align: center;" ng-repeat="card in cards">
+            <img src="{{ card.img }}" alt="{{ card.alt }}" class="round-imgs small-img">
+            <h2>{{ card.title }}</h2>
+            <p>{{ card.text }}</p>
         </div>
-</div>
+    </div>
+    <div class="row justify-content-end align-items-end mt-5" id="bio">
+        <div class="col-lg-4 col-sm-12">
+            <img src="img/home.jpg" id="me" class="round-imgs" alt="Mahmoud Youssef" />
+        </div>
+        <div class="col-lg-8 col-sm-12">
+            <h3>Mahmoud Youssef</h3>
+            <p>A student in the faculty of engineering at Ain-Shams university who is interested in front-end and back-end web development and has plenty of knowledge in both of those fields that allow him to make awesome web apps and web sites.<br> <q style="font-size: 1.5rem;">learning is endless, that's what makes it interesting.</q></p>
+        </div>
+    </div>
