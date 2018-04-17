@@ -105,6 +105,7 @@ footer  ul{
     padding: 0;
     background-image: url("/img/responsive2.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     border-radius: 5px;
     margin-bottom: 10px;
