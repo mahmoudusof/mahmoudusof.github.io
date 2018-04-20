@@ -96,6 +96,14 @@ footer  ul{
     list-style-type: none;
     padding-left: 0;
 }
+footer a{
+    color: #bbb;
+    text-decoration: underline;
+}
+footer a:hover{
+    color: #fff;
+    text-decoration: none;
+}
 .copy{
     font-weight: bold;
     margin: 30px auto 0 30px;
