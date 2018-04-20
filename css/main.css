@@ -41,6 +41,11 @@ body{
     width: 100%;
     margin-right: 30px;
 }
+.order:hover{
+    background-color: #2989f0;
+    border-color: #2e78bd;
+    transition: none;
+}
 /* this area needs refactoring */
 .contains{
     padding: 5vw;
